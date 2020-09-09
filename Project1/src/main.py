@@ -127,7 +127,7 @@ def error_curve_experiment():
 
         max_epsilons.append(max_error)
 
-    plt.figure(1,figsize=(9,6))
+    plt.figure(5,figsize=(9,6))
     plt.plot(1/(ns+1), max_epsilons)
     plt.title('Relative error by step length `h`.')
     plt.xscale("log")
