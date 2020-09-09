@@ -1,4 +1,13 @@
 import argparse
+import numpy as np
+
+def u(x):
+  """Differential equation to solve"""
+  return 1 - (1-np.exp(-10))*x - np.exp(-10*x)
+
+def f(x):
+  """Approximation of u''(x)"""
+  return 100 * np.exp(-10 * x)
 
 def main(args):
     print(args)
