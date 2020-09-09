@@ -21,6 +21,7 @@ def gaussian_elimination(A, b):
     np.ndarray
         The solution `v` for Av = b.
     """
+    n = len(b)
     # Join A and b
     ab = np.c_[A,b]
     # Gaussian Elimination
